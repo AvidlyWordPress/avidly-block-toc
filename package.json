@@ -1,0 +1,25 @@
+{
+	"name": "avidly-block-toc",
+	"version": "1.0.0",
+	"description": "https://developer.wordpress.org/block-editor/handbook/tutorials/create-block/",
+	"author": "Avidly",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update",
+		"make-pot": "wp i18n make-pot ./ languages/avidly-block-toc.pot",
+		"make-json": "find . -iname \"*.po\" -type f -exec sh -c 'npx po2json $0 $(dirname $0)/$(basename $0 .po)-avidly-block-toc-editor-script.json -f jed1.x' {} \\;"
+	},
+	"dependencies": {
+		"@wordpress/blocks": "^11.1.0",
+		"@wordpress/i18n": "^4.2.2"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^18.0.1"
+	}
+}

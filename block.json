@@ -1,0 +1,42 @@
+{
+	"apiVersion": 2,
+	"name": "avidly/block-toc",
+	"version": "1.0.0",
+	"title": "Table of contents",
+	"category": "widgets",
+	"icon": "list-view",
+	"description": "Block to generate Table of contents list.",
+	"attributes": {
+        "title": {
+			"type": "string"
+		},
+		"isOpen": {
+			"type": "bool",
+			"default": false
+		},
+		"querySelector": {
+			"type": "string",
+			"default": "#main h2"
+		}
+    },
+	"supports": {
+		"html": false,
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"color": {
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		}
+	},
+	"textdomain": "avidly-block-toc",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"script": "file:./build/app.js",
+	"style": "file:./build/style-index.css"
+}
