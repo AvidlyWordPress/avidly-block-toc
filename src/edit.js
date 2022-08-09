@@ -67,7 +67,7 @@ export default function Edit( props ) {
 					/>
 
 					<TextControl
-						label={ __( 'Content ID', 'avidly-block-toc' ) }
+						label={ __( 'Elements (querySelectorAll)', 'avidly-block-toc' ) }
 						value={ querySelector || '#main h2' }
 						onChange={ ( querySelector ) => setAttributes( { querySelector } ) }
 					/>

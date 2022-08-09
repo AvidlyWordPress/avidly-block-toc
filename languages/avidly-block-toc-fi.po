@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Avidly Toc Block 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/avidly-toc-block\n"
-"POT-Creation-Date: 2022-08-08T13:00:34+00:00\n"
-"PO-Revision-Date: 2022-08-08 16:01+0300\n"
+"POT-Creation-Date: 2022-08-09T06:50:38+00:00\n"
+"PO-Revision-Date: 2022-08-09 09:52+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "List title"
 msgstr "Listauksen otsikko"
 
-#: build/index.js:1 src/edit.js:57 src/edit.js:72 src/edit.js:75 src/save.js:31
+#: build/index.js:1 src/edit.js:57 src/edit.js:78 src/edit.js:81 src/save.js:31
 #: src/save.js:34
 msgid "Table of contents"
 msgstr "Sisällysluettelo"
@@ -47,9 +47,17 @@ msgstr "Sisällysluettelo"
 msgid "Show list open by default"
 msgstr "Näytä luettelo oletuksena avoinna"
 
-#: build/index.js:1 src/edit.js:79
+#: build/index.js:1
+msgid "Content ID"
+msgstr ""
+
+#: build/index.js:1 src/edit.js:85
 msgid "Automatically generated content links."
 msgstr "Sisällysluettelon linkit generoituvat automaattisesti."
+
+#: src/edit.js:70
+msgid "Elements (querySelectorAll)"
+msgstr "Elementit (querySelectorAll)"
 
 #: block.json
 msgctxt "block title"
