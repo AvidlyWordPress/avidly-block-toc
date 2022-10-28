@@ -48,8 +48,15 @@ function getTocTitles( querySelectorAll ) {
 
 	querySelectorAll.forEach(function( el ) {
 		// Get stuff to variables.
-		const title = el.innerText;
-		const id    = el.innerText.replace(/[^A-Z0-9]+/ig, "-").toLowerCase(); // remove spaces, special charasters and capital letters.
+		const title = el.innerText || el.textContent;
+
+		// Skip this element if there is empty content in element.
+		if ( '' === title ) {
+			console.log( 'ToC: empty title detected');
+			return;
+		}
+
+		const id = title.replace(/[^A-Z0-9]+/ig, "-").toLowerCase(); // remove spaces, special charasters and capital letters.
 
 		// Set custom ID for element.
 		el.id = id;
