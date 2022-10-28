@@ -5,9 +5,9 @@
 const tocToggle = document.querySelector('#toc-toggle');
 const tocMenu   = document.querySelector('#toc-links');
 
-const jquerySelector = ( tocToggle !== null ) ? tocToggle.getAttribute('data-selector') : null;
-const mainTitles     = ( jquerySelector !== null ) ? document.querySelectorAll( jquerySelector ) : null;
-const foundTitles    = ( mainTitles !== null ) ? getTocTitles( mainTitles ) : null;
+const domSelector = ( tocToggle !== null ) ? tocToggle.getAttribute( 'data-selector' ) : null;
+const mainTitles  = ( domSelector !== null ) ? document.querySelectorAll( domSelector ) : null;
+const foundTitles = ( mainTitles !== null ) ? getTocTitles( mainTitles ) : null;
 
 
 // Run stuff if all used element are found.
