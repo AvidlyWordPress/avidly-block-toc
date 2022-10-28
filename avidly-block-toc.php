@@ -4,7 +4,7 @@
  * Description:       Custom block to generate table of contents list from content with anchor links.
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Avidly
  * Author URI:        https://www.avidlyagency.com/
  * License:           GPL-2.0-or-later
