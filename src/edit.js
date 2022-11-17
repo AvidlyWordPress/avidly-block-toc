@@ -76,15 +76,15 @@ export default function Edit( props ) {
 		</InspectorControls>,
 
 		<nav { ...useBlockProps() } aria-label={ __( 'Table of contents', 'avidly-block-toc' ) }>
-			<div class="toc">
-				<button id="toc-toggle" type="button" aria-expanded={ isOpen ? true : false } aria-controls="toc-links" data-selector={ querySelector }>
+			<details class="toc" { ...( isOpen ? { open: 'true' } : {} ) }>
+				<summary id="toc-toggle" data-selector={ querySelector }>
 					{ title || __( 'Table of contents', 'avidly-block-toc' ) }
-				</button>
+				</summary>
 				
-				<ul id="toc-links" { ...( isOpen ? {} : { hidden: 'true' } ) }>
+				<ul id="toc-links">
 					<li role="status">{ __('Automatically generated content links.', 'avidly-block-toc' ) }</li>
 				</ul>
-			</div>
+			</details>
 		</nav>
 	];
 }
